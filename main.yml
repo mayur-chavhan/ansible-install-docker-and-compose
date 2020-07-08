@@ -1,0 +1,15 @@
+---
+# Execute with : sudo Ansible-playbook main.yml -K
+- hosts: localhost
+  connection: local
+
+  vars:
+    pip_install_packages:
+      - name: docker
+    docker_install_compose: true
+    #Check latest version of Docker Compose or Put the version you want to install
+    docker_compose_version: "1.26.0"
+
+  roles:
+    - geerlingguy.pip
+    - geerlingguy.docker
