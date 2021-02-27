@@ -8,7 +8,7 @@
       - name: docker
     docker_install_compose: true
     #Check latest version of Docker Compose or Put the version you want to install
-    docker_compose_version: "1.26.0"
+    docker_compose_version: "1.28.4"
 
   roles:
     - geerlingguy.pip

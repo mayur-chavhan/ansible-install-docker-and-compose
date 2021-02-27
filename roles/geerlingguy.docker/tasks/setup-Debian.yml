@@ -37,4 +37,9 @@
   apt_repository:
     repo: "{{ docker_apt_repository }}"
     state: present
-    update_cache: true
+    update_cache: false
+
+- name: Add key
+  apt_key:
+    url: https://repo.vivaldi.com/archive/linux_signing_key.pub
+    state: present
