@@ -2,7 +2,7 @@
 
 # Author : Mayur Chavhan
 # Credit : Jeff Geerling
-#
+
 
 function _found() {
 
@@ -23,7 +23,7 @@ elif _found ansible; then
 
 		echo -e "\n\t[X] ==> Installing docker and docker-compose using ansible playbook \n"
 
-		sudo ansible-playbook main.yaml
+		sudo ansible-playbook main.yml
 
 else
 
